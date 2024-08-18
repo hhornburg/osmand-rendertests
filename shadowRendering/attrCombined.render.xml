@@ -1,0 +1,38 @@
+<renderingStyle name="attrIntValue" depends="" defaultColor="#ffffff" version="1">
+
+    <renderingConstant name="width_l2_z12" value="2"/>
+    <renderingConstant name="width_l2_z13" value="4"/>
+    <renderingConstant name="width_l2_z14" value="6"/>
+    <renderingConstant name="width_l2_z15" value="8"/>
+    <renderingConstant name="width_l2_z16" value="10"/>
+    <renderingConstant name="width_l2_z17" value="12"/>
+    <renderingConstant name="width_l2_z18" value="14"/>
+    <renderingConstant name="width_l2_z19" value="16"/>
+    <renderingConstant name="width_l2_z20" value="18"/>
+    <renderingConstant name="width_l2_z21" value="20"/>
+
+    <renderingAttribute name="width_l2">
+        <case maxzoom="12" attrIntValue="$width_l2_z12" attrFloatValue="$width_l2_z12" />
+        <case minzoom="13" maxzoom="13" attrIntValue="$width_l2_z13" attrFloatValue="$width_l2_z13" />
+        <case minzoom="14" maxzoom="14" attrIntValue="$width_l2_z14" attrFloatValue="$width_l2_z14" />
+        <case minzoom="15" maxzoom="15" attrIntValue="$width_l2_z15" attrFloatValue="$width_l2_z15" />
+        <case minzoom="16" maxzoom="16" attrIntValue="$width_l2_z16" attrFloatValue="$width_l2_z16" />
+        <case minzoom="17" maxzoom="17" attrIntValue="$width_l2_z17" attrFloatValue="$width_l2_z17" />
+        <case minzoom="18" maxzoom="18" attrIntValue="$width_l2_z18" attrFloatValue="$width_l2_z18" />
+        <case minzoom="19" maxzoom="19" attrIntValue="$width_l2_z19" attrFloatValue="$width_l2_z19" />
+        <case minzoom="20" maxzoom="20" attrIntValue="$width_l2_z20" attrFloatValue="$width_l2_z20" />
+        <case minzoom="21" attrIntValue="$width_l2_z21" attrFloatValue="$width_l2_z21" />
+    </renderingAttribute>
+
+    <order>
+        <switch area="false" point="false" objectType="2">
+            <case tag="highway" value="primary" order="42"/>
+        </switch>
+    </order>
+
+    <line>
+        <switch>
+            <case tag="highway" value="primary" color="#ff0000" strokeWidth="$width_l2" cap="ROUND" />
+        </switch>
+    </line>
+</renderingStyle>
