@@ -1,0 +1,56 @@
+<renderingStyle name="attrIntValue_shadowRendering" depends="" defaultColor="#ffffff" version="1">
+
+    <renderingAttribute name="shadowRendering">
+        <!-- 0 - no shadow, 1 - one step, 2 - blur shadow, 3 - solid shadow -->
+        <case attrIntValue="3" attrFloatValue="3"/>
+    </renderingAttribute>
+
+    <renderingConstant name="foo_z12" value="7_2"/>
+    <renderingConstant name="foo_z13" value="14_4"/>
+    <renderingConstant name="foo_z14" value="21_6"/>
+    <renderingConstant name="foo_z15" value="28_8"/>
+    <renderingConstant name="foo_z16" value="35_10"/>
+    <renderingConstant name="foo_z17" value="42_12"/>
+    <renderingConstant name="foo_z18" value="49_14"/>
+    <renderingConstant name="foo_z19" value="56_16"/>
+    <renderingConstant name="foo_z20" value="63_18"/>
+    <renderingConstant name="foo_z21" value="70_20"/>
+
+    <renderingAttribute name="foo">
+        <case maxzoom="12" attrStringValue="$foo_z12" />
+        <case minzoom="13" maxzoom="13" attrStringValue="$foo_z13" />
+        <case minzoom="14" maxzoom="14" attrStringValue="$foo_z14" />
+        <case minzoom="15" maxzoom="15" attrStringValue="$foo_z15" />
+        <case minzoom="16" maxzoom="16" attrStringValue="$foo_z16" />
+        <case minzoom="17" maxzoom="17" attrStringValue="$foo_z17" />
+        <case minzoom="18" maxzoom="18" attrStringValue="$foo_z18" />
+        <case minzoom="19" maxzoom="19" attrStringValue="$foo_z19" />
+        <case minzoom="20" maxzoom="20" attrStringValue="$foo_z20" />
+        <case minzoom="21" attrStringValue="$foo_z21" />
+    </renderingAttribute>
+
+    <renderingAttribute name="bar">
+        <case maxzoom="12" attrStringValue="5_5" />
+        <case minzoom="13" maxzoom="13" attrStringValue="10_10" />
+        <case minzoom="14" maxzoom="14" attrStringValue="15_15" />
+        <case minzoom="15" maxzoom="15" attrStringValue="20_20" />
+        <case minzoom="16" maxzoom="16" attrStringValue="25_25" />
+        <case minzoom="17" maxzoom="17" attrStringValue="30_30" />
+        <case minzoom="18" maxzoom="18" attrStringValue="35_35" />
+        <case minzoom="19" maxzoom="19" attrStringValue="40_40" />
+        <case minzoom="20" maxzoom="20" attrStringValue="45_45" />
+        <case minzoom="21" attrStringValue="50_50" />
+    </renderingAttribute>
+
+    <order>
+        <switch area="false" point="false" objectType="2">
+            <case tag="highway" value="primary" order="42"/>
+        </switch>
+    </order>
+
+    <line>
+        <switch>
+            <case tag="highway" value="primary" color="#ff0000" strokeWidth="5" pathEffect="$bar" />
+        </switch>
+    </line>
+</renderingStyle>
