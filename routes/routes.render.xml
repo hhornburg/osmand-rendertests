@@ -1,0 +1,29 @@
+<renderingStyle name="routes" depends="" defaultColor="#ffffff" version="1">
+    <renderingProperty attr="show_route_eq_hiking" name="Show route=hiking" description="Show route=hiking" type="boolean" possibleValues="" category="details"/>
+    <renderingProperty attr="show_route_hiking" name="Show route_hiking=" description="Show route_hiking" type="boolean" possibleValues="" category="details"/>
+    <renderingProperty attr="show_route_eq_mtb" name="Show route=mtb" description="Show route=mtb" type="boolean" possibleValues="" category="details"/>
+    <renderingProperty attr="show_route_mtb" name="Show route_mtb=" description="Show route_mtb" type="boolean" possibleValues="" category="details"/>
+    <renderingProperty attr="show_route_eq_bicycle" name="Show route=bicycle" description="Show route=bicycle" type="boolean" possibleValues="" category="details"/>
+    <renderingProperty attr="show_route_bicycle" name="Show route_bicycle=" description="Show route_bicycle" type="boolean" possibleValues="" category="details"/>
+
+    <order>
+        <switch area="false" point="false" objectType="2">
+            <case tag="route" value="hiking" order="42"/>
+            <case tag="route_hiking" value="" order="42"/>
+            <case tag="route" value="mtb" order="42"/>
+            <case tag="route_mtb" value="" order="42"/>
+            <case tag="route" value="bicycle" order="42"/>
+            <case tag="route_bicycle" value="" order="42"/>
+        </switch>
+    </order>
+    <line>
+        <switch>
+            <case tag="route" value="hiking" color="#ff0000" strokeWidth="5"/>
+            <case tag="route_hiking" value="" color="#ff0000" strokeWidth="5"/>
+            <case tag="route" value="mtb" color="#ff0000" strokeWidth="5"/>
+            <case tag="route_mtb" value="" color="#ff0000" strokeWidth="5"/>
+            <case tag="route" value="bicycle" color="#ff0000" strokeWidth="5"/>
+            <case tag="route_bicycle" value="" color="#ff0000" strokeWidth="5"/>
+        </switch>
+    </line>
+</renderingStyle>
