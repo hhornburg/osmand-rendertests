@@ -3,6 +3,7 @@
     <renderingProperty attr="show_route_hiking" name="Show route_hiking=" description="Show route_hiking" type="boolean" possibleValues="" category="details"/>
     <renderingProperty attr="show_route_eq_mtb" name="Show route=mtb" description="Show route=mtb" type="boolean" possibleValues="" category="details"/>
     <renderingProperty attr="show_route_mtb" name="Show route_mtb=" description="Show route_mtb" type="boolean" possibleValues="" category="details"/>
+    <renderingProperty attr="show_route_mtb_ncn" name="Show route_mtb= network=ncn" description="Show route_mtb= network=ncn" type="boolean" possibleValues="" category="details"/>
     <renderingProperty attr="show_route_eq_bicycle" name="Show route=bicycle" description="Show route=bicycle" type="boolean" possibleValues="" category="details"/>
     <renderingProperty attr="show_route_bicycle" name="Show route_bicycle=" description="Show route_bicycle" type="boolean" possibleValues="" category="details"/>
 
@@ -21,7 +22,7 @@
             <case show_route_eq_hiking="true" tag="route" value="hiking" color="#ff0000" strokeWidth="5"/>
             <case show_route_hiking="true" tag="route_hiking" value="" color="#ff0000" strokeWidth="5"/>
             <case show_route_eq_mtb="true" tag="route" value="mtb" color="#ff0000" strokeWidth="5"/>
-            <case show_route_mtb="true" tag="route_mtb" value="" color="#ff0000" strokeWidth="5"/>
+            <case show_route_mtb_ncn="true" tag="route_mtb" value="" additional="network=ncn" color="#ff0000" strokeWidth="5"/>
             <case show_route_eq_bicycle="true" tag="route" value="bicycle" color="#ff0000" strokeWidth="5"/>
             <case show_route_bicycle="true" tag="route_bicycle" value="" color="#ff0000" strokeWidth="5"/>
         </switch>
