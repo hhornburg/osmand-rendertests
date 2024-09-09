@@ -22,6 +22,7 @@
             <case show_route_eq_hiking="true" tag="route" value="hiking" color="#ff0000" strokeWidth="5"/>
             <case show_route_hiking="true" tag="route_hiking" value="" color="#ff0000" strokeWidth="5"/>
             <case show_route_eq_mtb="true" tag="route" value="mtb" color="#ff0000" strokeWidth="5"/>
+            <case show_route_mtb="true" tag="route_mtb" value="" color="#ff0000" strokeWidth="5"/>
             <case show_route_mtb_ncn="true" tag="route_mtb" value="" additional="network=ncn" color="#ff0000" strokeWidth="5"/>
             <case show_route_eq_bicycle="true" tag="route" value="bicycle" color="#ff0000" strokeWidth="5"/>
             <case show_route_bicycle="true" tag="route_bicycle" value="" color="#ff0000" strokeWidth="5"/>
